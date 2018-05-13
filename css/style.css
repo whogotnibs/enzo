@@ -35,7 +35,7 @@ h3 {
 
 h4 {
   font-family: georgia;
-  font-size: 250px;
+  font-size: 200px;
   font-style: italic;
   font-weight: 500;
   position: fixed;
@@ -93,16 +93,16 @@ a:hover > h2 {
 }
 
 #navnum1 {
-  left: 180px;
-  bottom: -280px;
+  left: 190px;
+  bottom: -178px;
 }
 
 #navnum2 {
-  right: 320px;
-  bottom: -350px;
+  right: 340px;
+  bottom: -260px;
 }
 
 #navnum3 {
   right: 30px;
-  top:-150px;
+  top:-61px;
 }
