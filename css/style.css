@@ -56,6 +56,19 @@ a:hover > h2 {
   text-decoration: underline;
 }
 
+a:hover > img {
+  opacity: 1;
+}
+
+a img {
+  transition: opacity .3s ease-in-out;
+  opacity: .7;
+}
+
+a div {
+  background-color: white;
+}
+
 #navimg1 {
   width: 260px;
   position: fixed;
@@ -105,4 +118,11 @@ a:hover > h2 {
 #navnum3 {
   right: 30px;
   top:-61px;
+}
+
+#white {
+  background-color: white;
+  position: fixed;
+  width: 100px;
+  height: 100px;
 }
