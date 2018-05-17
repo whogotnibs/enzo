@@ -113,29 +113,31 @@ a:hover > img {
 
 a img {
   transition: opacity .3s ease-in-out;
-  opacity: .7;
+  opacity: .8;
+  -webkit-transform: translateZ(0);
+  width: calc(100% + .49px);
 }
 
 a div {
   background-color: white;
 }
 
-div img {
+a img {
   width: 100%;
 }
 
 #nav1 {
-  position: absolute;
+  position: fixed;
   left: 33px;
   top: 40%;
-  max-width: 25%;
+  width: 25%;
 }
 
 #nav2 {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 1%;
   right: 40%;
-  max-width: 20%;
+  width: 20%;
   text-align: right;
 }
 
@@ -144,7 +146,7 @@ div img {
 }
 
 #nav3 {
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 30px;
   width: 35%;
@@ -153,11 +155,4 @@ div img {
 
 #nav3 h2 {
   padding-right: 5px;
-}
-
-#white {
-  background-color: white;
-  position: fixed;
-  width: 100px;
-  height: 100px;
 }
