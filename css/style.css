@@ -1,10 +1,56 @@
-body, html {
+body, html, section{
   padding: 0;
   margin: 0;
 }
 
+body {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100vw);
+    scroll-behaviour: smooth;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+    white-space: nowrap;
+    position: fixed;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    /* background-color: teal; */
+}
+
+#loader {
+  position: fixed;
+  width: 1000px;
+  height: 100px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -500px;
+}
+
 #header {
   padding: 15px 30px;
+}
+
+.slideshow {
+  height: 85vh;
+  padding: 2vh;
 }
 
 h1 {
@@ -16,7 +62,7 @@ h1 {
   display: inline;
 }
 
-h1:hover {
+h1 a:hover {
   text-decoration: underline;
 }
 
@@ -25,7 +71,7 @@ h2 {
   font-family: "Work Sans";
   font-weight: 500;
   font-style: italic;
-  position: fixed;
+  margin-top: 5px;
 }
 
 h3 {
@@ -74,55 +120,39 @@ a div {
   background-color: white;
 }
 
-#navimg1 {
-  width: 260px;
-  position: fixed;
+div img {
+  width: 100%;
+}
+
+#nav1 {
+  position: absolute;
   left: 33px;
-  bottom: 250px;
+  top: 40%;
+  max-width: 25%;
 }
 
-#navimg2 {
-  width: 200px;
-  position: fixed;
-  right: 420px;
-  bottom: 80px;
+#nav2 {
+  position: absolute;
+  bottom: 0px;
+  right: 40%;
+  max-width: 20%;
+  text-align: right;
 }
 
-#navimg3 {
-  width: 300px;
-  position: fixed;
-  right: 30px;
+#nav2 h2 {
+  padding-right: 5px;
+}
+
+#nav3 {
+  position: absolute;
   top: 100px;
-}
-
-#navtxt1 {
-  left: 33px;
-  bottom: 170px;
-}
-
-#navtxt2 {
-  right: 545px;
-  bottom: 28px;
-}
-
-#navtxt3 {
-  right: 182px;
-  top: 268px;
-}
-
-#navnum1 {
-  left: 190px;
-  bottom: -178px;
-}
-
-#navnum2 {
-  right: 340px;
-  bottom: -260px;
-}
-
-#navnum3 {
   right: 30px;
-  top:-61px;
+  width: 35%;
+  text-align: right;
+}
+
+#nav3 h2 {
+  padding-right: 5px;
 }
 
 #white {
