@@ -1,7 +1,5 @@
 $(window).load(function() {
-  setTimeout(loader, 500)
+  setTimeout(function(){
+    $("body").fadeIn(1700)
+  }, 200)
 });
-
-function loader () {
-  $("body").fadeIn(1700)
-}
