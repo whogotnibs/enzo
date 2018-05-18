@@ -50,7 +50,7 @@ section {
 
 .slideshow {
   height: 85vh;
-  padding: 2vh;
+  padding: 2vh 0;
 }
 
 h1 {
@@ -86,11 +86,19 @@ h3 {
 
 h4 {
   font-family: georgia;
-  font-size: 200px;
+  font-size: 100px;
   font-style: italic;
   font-weight: 500;
   position: fixed;
-  z-index: -1;
+  z-index: 2;
+  color: lightgrey;
+  bottom: 30px;
+  right: 30px;
+  margin: 0;
+}
+
+#total {
+  font-size: 40px;
   color: lightgrey;
 }
 
@@ -155,4 +163,8 @@ a img {
 
 #nav3 h2 {
   padding-right: 5px;
+}
+
+.current{
+    /* background-color: blue; */
 }
