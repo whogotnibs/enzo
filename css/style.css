@@ -30,7 +30,6 @@ section {
     position: relative;
     display: inline-block;
     text-align: center;
-    /* background-color: teal; */
 }
 
 #loader {
@@ -49,8 +48,8 @@ section {
 }
 
 .slideshow {
-  max-height: 85vh;
-  max-width: 75%;
+  max-height: 82vh;
+  /* max-width: 75%; */
   padding: 2vh 0;
 }
 
