@@ -69,7 +69,7 @@ function arrowKeys () {
       currentPage++;
       position = currentPage-1;
       width = $( window ).width();
-      $('.container').animate({scrollLeft:(position*width)}, 400);
+      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 400);
     }
     else if (evt.keyCode == 37 && currentPage > 1 && animating != true) { // left arrow
       animating=true;
@@ -78,8 +78,9 @@ function arrowKeys () {
       currentPage--;
       position = currentPage-1;
       width = $( window ).width();
-      $('.container').animate({scrollLeft:(position*width)}, 400);
+      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 400);
     }
+    console.log(animating);
 
   });
 }
