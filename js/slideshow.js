@@ -21,6 +21,8 @@ $(document).ready(function() {
 
   arrowKeys();
 
+  timeout();
+
 })
 
 function setProject () {
@@ -98,7 +100,7 @@ function tabs () {
     "-o-transition": "all .5s ease-out",
   });
   $('#tab'+currentPage).css({
-    "color": "grey",
+    "color": "dimgray",
     "font-size": "153px",
     "transition": "all .3s ease-in-out",
     "-webkit-transition": "all .5s ease-out",
@@ -122,9 +124,8 @@ function arrowKeys () {
       evt.preventDefault();
       currentPage++;
       position = currentPage-1;
-      //fixes glitch where it sometimes it goes slightly past and scrolls 2 pages
       width = $( window ).width();
-      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 200);
+      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 100);
     }
     else if (evt.keyCode == 37 && currentPage > 1 && animating != true) { // left arrow
       setTimeout(function(){animating=false}, 700);
@@ -133,9 +134,13 @@ function arrowKeys () {
       currentPage--;
       position = currentPage-1;
       width = $( window ).width();
-      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 200);
+      $('.container').clearQueue().animate({scrollLeft:(position*width)}, 100);
     }
-    console.log(animating);
+    console.log(animating, currentPage, width);
 
   });
+}
+
+function timeout () {
+  // setInterval(function(){animating=false}, 5000);
 }
