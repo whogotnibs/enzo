@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   arrowKeys();
 
-  timeout();
+  arrow();
 
 })
 
@@ -141,6 +141,8 @@ function arrowKeys () {
   });
 }
 
-function timeout () {
-  // setInterval(function(){animating=false}, 5000);
+function arrow () {
+  $('.container').scroll(function() {
+    $('#arrow').clearQueue().animate({opacity:0}, 1000);
+  });
 }

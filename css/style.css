@@ -57,9 +57,9 @@ section {
 }
 
 .slideshow {
-  height: 82vh;
+  height: 80vh;
   /* max-width: 75%; */
-  padding-bottom: 30px;
+  /* padding-bottom: 50px; */
 }
 
 h1 {
@@ -270,4 +270,13 @@ li a:hover {
 #alignright {
   float: right;
   margin: 9px 30px;
+}
+
+#arrow {
+  position: absolute;
+  z-index: 3;
+  height: 150px;
+  margin-top: -75px;
+  right: 30px;
+  top: 50%;
 }
