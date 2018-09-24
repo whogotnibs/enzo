@@ -280,3 +280,9 @@ li a:hover {
   right: 30px;
   top: 50%;
 }
+
+#info {
+  margin-left: 30px;
+  width: 50%;
+  float: left;
+}
