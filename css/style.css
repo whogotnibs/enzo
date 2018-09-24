@@ -143,7 +143,7 @@ a:hover > img {
 
 a img {
   transition: opacity .3s ease-in-out;
-  opacity: .8;
+  opacity: .9;
   -webkit-transform: translateZ(0);
   width: calc(100% + .49px);
 }
