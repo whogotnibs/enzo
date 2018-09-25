@@ -317,12 +317,27 @@ li a:hover {
       margin-top: 30%;
     }
 
-    .footer h5{
+    .footer h5:not(.showemail){
       visibility: hidden;
+    }
+
+    .footer {
+      height: 50px;
+    }
+
+    #alignright{
+      text-align: center;
+      float: none;
+      margin-top: 18px;
     }
 
     #arrow {
       visibility: hidden;
+    }
+
+    #info {
+      width: auto;
+      margin-right: 30px;
     }
 
   }
