@@ -286,7 +286,7 @@ li a:hover {
   float: left;
 }
 
-@media only screen and (max-device-width: 950px) {
+@media and (max-width: 950px) {
 
     #nav1, #nav2, #nav3 {
       position: static;
