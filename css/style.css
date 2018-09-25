@@ -286,7 +286,7 @@ li a:hover {
   float: left;
 }
 
-@media and (max-width: 950px) {
+@media and (min-width: 300px) {
 
     #nav1, #nav2, #nav3 {
       position: static;
