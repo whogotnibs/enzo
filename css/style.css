@@ -178,7 +178,7 @@ a img {
   top: 100px;
   right: 30px;
   width: 20%;
-  text-align: right;
+  text-align: left;
 }
 
 #nav3 h2 {
@@ -285,3 +285,44 @@ li a:hover {
   width: 50%;
   float: left;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+    }
+
+    #nav1, #nav2, #nav3 {
+      position: static;
+      margin: auto;
+      width: 40%;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    #nav3 {
+      margin-bottom: 75px;
+    }
+
+    h2 {
+      font-size: 15px;
+      margin-top: -3px;
+    }
+
+    h1 {
+      word-spacing: 100vw;
+    }
+
+    .container img {
+      width: auto;
+      height: 200px;
+      margin-top: 30%;
+    }
+
+    .footer h5{
+      visibility: hidden;
+    }
+
+    #arrow {
+      visibility: hidden;
+    }
+
+  }
