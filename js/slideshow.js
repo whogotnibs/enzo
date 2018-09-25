@@ -1,7 +1,7 @@
 var project = [
   //name, number of images, url
   ["NARRATIVES", 5, "narratives"],
-  ["2018", 8, "2018"],
+  ["2018", 7, "2018"],
   ["MANUFACTURED LANDSCAPES", 10, "ml"],
 ]
 var proj;
