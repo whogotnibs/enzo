@@ -286,7 +286,9 @@ li a:hover {
   float: left;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
+    body {
+    }
 
     #nav1, #nav2, #nav3 {
       position: static;
@@ -326,7 +328,7 @@ li a:hover {
     #alignright{
       text-align: center;
       float: none;
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     #arrow {
